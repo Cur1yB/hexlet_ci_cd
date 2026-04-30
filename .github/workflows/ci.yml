@@ -15,7 +15,7 @@ jobs:
       with:
         python-version: '3.13'
     - name: install uv
-      run: pip instal uv
+      run: pip install uv
     - name: install dependencies
       run: uv sync
     - name: build
