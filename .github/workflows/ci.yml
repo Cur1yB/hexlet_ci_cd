@@ -10,19 +10,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.13'
-      - name: install uv
-        run: pip instal uv
-      - name: install dependencies
-        run: uv sync
-      - name: build
-        run: uv run python3 -m build
-      - name: run tests
-        run: uv run pytest .
-      - name: run linting
-        run: uv run ruff check .
+    - uses: actions/checkout@v6
+    - uses: actions/setup-python@v6
+      with:
+        python-version: '3.13'
+    - name: install uv
+      run: pip instal uv
+    - name: install dependencies
+      run: uv sync
+    - name: build
+      run: uv run python3 -m build
+    - name: run tests
+      run: uv run pytest .
+    - name: run linting
+      run: uv run ruff check .
 
