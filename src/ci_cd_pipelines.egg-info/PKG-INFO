@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: ci-cd-pipelines
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+Requires-Dist: build>=1.5.0
+Requires-Dist: mypy>=1.20.2
+Requires-Dist: pre-commit>=4.6.0
+Requires-Dist: pytest>=9.0.3
+Requires-Dist: ruff>=0.15.12
+
+# hexlet_ci_cd
+
+[пре-коммит хуки](https://github.com/astral-sh/ruff-pre-commit)
+[setup-python](https://github.com/actions/setup-python)
